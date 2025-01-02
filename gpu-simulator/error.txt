@@ -1,0 +1,718 @@
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../abstract_hardware_model.h:218:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:36,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../stream_manager.h: In member function ‘bool CUevent_st::done() const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../stream_manager.h:67:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   bool done() const { return m_updates == m_issued; }
+                              ~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:51:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:37,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h: In constructor ‘tag_arr_entry_data::tag_arr_entry_data()’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h:65:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i < TAG_ARR_ENTRY_CHUNK_SIZE; i++) {
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+ptx.y: warning: 1 nonterminal useless in grammar [-Wother]
+ptx.y: warning: 2 rules useless in grammar [-Wother]
+ptx.y:573.1-7: warning: nonterminal useless in grammar: vp_spec [-Wother]
+  573 | vp_spec: WMMA_DIRECTIVE LAYOUT CONFIGURATION{recognizer->add_space_sp...
+      | ^~~~~~~
+ptx.y: warning: 57 reduce/reduce conflicts [-Wconflicts-rr]
+ptx.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+ptx.y:277.11-112: warning: rule useless in parser due to conflicts [-Wother]
+  277 | 	| WEAK_DIRECTIVE FUNC_DIRECTIVE { $$ = 0; recognizer->g_func_...
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/addrdec.h:29:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h:40,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:51,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:37,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘new_addr_type tag_arr_sector_cache_block::get_tag_arr_entry_addr(new_addr_type, int)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h:673:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     assert(sidx >= 0 && sidx < TAG_ARR_SECTOR_CHUNCK_SIZE);
+                         ~~~~~^~~
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:51:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:37,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘void tag_arr_sector_cache_block::move_entry_from_evict_buffer(unsigned int, mem_access_tag_arr_sector_mask_t, tag_arr_entry_evict_entry)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h:747:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int col_idx = 0; col_idx < TAG_ARR_ENTRY_CHUNK_SIZE; col_idx++) {
+                           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘void tag_arr_sector_cache_block::fill(unsigned int, mem_access_tag_arr_sector_mask_t, tag_arr_entry_data)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/gpu-cache.h:778:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int col_idx = 0; col_idx < TAG_ARR_ENTRY_CHUNK_SIZE; col_idx++) {
+                           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/gpgpu_context.h:3,
+                 from main.cc:13:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In member function ‘virtual bool specialized_unit::can_issue(const warp_inst_t&) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:1318:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (inst.op != m_supported_op) {
+         ~~~~~~~~^~~~~~~~~~~~~~~~~
+ptx.l:169: undeclared start condition IN_INST
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h:218:0,
+                 from ../ISA_Def/ampere_opcode.h:9,
+                 from trace_driven.cc:14:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/stream_manager.h: In member function ‘bool CUevent_st::done() const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/stream_manager.h:67:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   bool done() const { return m_updates == m_issued; }
+                              ~~~~~~~~~~^~~~~~~~~~~
+ptx.l:225: warning, rule cannot be matched
+ptxinfo.y: warning: 2 reduce/reduce conflicts [-Wconflicts-rr]
+ptxinfo.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+In file included from ../ISA_Def/ampere_opcode.h:9:0,
+                 from trace_driven.cc:14:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from cuda-math.h:354:0,
+                 from instructions.cc:50:
+/usr/local/cuda-10.1/include/math_functions.h:54:2: warning: #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead." [-Wcpp]
+ #warning "math_functions.h is an internal header file and must not be used directly.  This file will be removed in a future CUDA release.  Please use cuda_runtime_api.h or cuda_runtime.h instead."
+  ^~~~~~~
+In file included from ptx_ir.h:32:0,
+                 from cuda_device_printf.cc:30:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from memory.h:32:0,
+                 from memory.cc:29:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:51:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/cuda-sim.h:37,
+                 from trace_driven.cc:22:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h: In constructor ‘tag_arr_entry_data::tag_arr_entry_data()’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h:65:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i < TAG_ARR_ENTRY_CHUNK_SIZE; i++) {
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ptx_sim.h:32:0,
+                 from ptx_sim.cc:29:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ptx_ir.h:32:0,
+                 from ptx_ir.cc:30:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/addrdec.h:29:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h:40,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:51,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/cuda-sim.h:37,
+                 from trace_driven.cc:22:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘new_addr_type tag_arr_sector_cache_block::get_tag_arr_entry_addr(new_addr_type, int)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h:673:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     assert(sidx >= 0 && sidx < TAG_ARR_SECTOR_CHUNCK_SIZE);
+                         ~~~~~^~~
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:51:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/cuda-sim.h:37,
+                 from trace_driven.cc:22:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘void tag_arr_sector_cache_block::move_entry_from_evict_buffer(unsigned int, mem_access_tag_arr_sector_mask_t, tag_arr_entry_evict_entry)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h:747:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int col_idx = 0; col_idx < TAG_ARR_ENTRY_CHUNK_SIZE; col_idx++) {
+                           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h: In member function ‘void tag_arr_sector_cache_block::fill(unsigned int, mem_access_tag_arr_sector_mask_t, tag_arr_entry_data)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/gpu-cache.h:778:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int col_idx = 0; col_idx < TAG_ARR_ENTRY_CHUNK_SIZE; col_idx++) {
+                           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from cuda-sim.h:36:0,
+                 from cuda-sim.cc:30:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+main.cc: In function ‘int main(int, const char**)’:
+main.cc:165:33: warning: deleting object of polymorphic class type ‘function_info’ which has non-virtual destructor might cause undefined behavior [-Wdelete-non-virtual-dtor]
+       delete kernel_info->entry();
+                                 ^
+In file included from ./ptx_ir.h:32:0,
+                 from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/build/gcc-7.3.0/cuda-10010/release/cuda-sim/instructions.h:2,
+                 from instructions.cc:29:
+./../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+./../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+./../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+./../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/cuda-sim.h:37:0,
+                 from trace_driven.cc:22:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h: In member function ‘virtual bool specialized_unit::can_issue(const warp_inst_t&) const’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/src/cuda-sim/../gpgpu-sim/shader.h:1318:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (inst.op != m_supported_op) {
+         ~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx-stats.cc:32:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ./ptx_parser.h:32:0,
+                 from ptx.l:40:
+./../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+./../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+./../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+./../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx_ir.cc:42:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx_sim.cc:34:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+In file included from ./../../libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from ./../../libcuda/gpgpu_context.h:3,
+                 from ptxinfo.l:42:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ./../../libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from ./../../libcuda/gpgpu_context.h:3,
+                 from ptx.y:33:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from memory.cc:31:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+./../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from cuda-sim.h:37:0,
+                 from cuda-sim.cc:30:
+../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+ptx_ir.cc: In member function ‘std::__cxx11::string ptx_instruction::to_string() const’:
+ptx_ir.cc:1469:78: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+         snprintf(buf + used_bytes, STR_SIZE - used_bytes, " PC=0x%03x ", m_PC);
+                                                                          ~~~~^
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx-stats.cc:32:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+ptx_sim.cc: In function ‘void print_reg(FILE*, std::__cxx11::string, ptx_reg_t, symbol_table*)’:
+ptx_sim.cc:372:71: warning: format ‘%f’ expects argument of type ‘double’, but argument 3 has type ‘half_float::half’ [-Wformat=]
+       fprintf(fp, ".f16 %f [0x%04x]\n", value.f16, (unsigned)value.u16);
+                                         ~~~~~~~~~                     ^
+In file included from ../gpgpu-sim/gpu-sim.h:41:0,
+                 from instructions.cc:48:
+../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from cuda_device_runtime.cc:12:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ptx_parser.h:32:0,
+                 from ptx_parser.cc:29:
+../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:36:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx_loader.cc:34:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1033:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../../libcuda/../src/cuda-sim/../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+../abstract_hardware_model.h: In member function ‘virtual void warp_inst_t::print_insn(FILE*) const’:
+../abstract_hardware_model.h:1227:43: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, " [inst @ pc=0x%04x] ", pc);
+                                         ~~^
+In file included from ./../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ./../../libcuda/gpgpu_context.h:3,
+                 from ptx.y:33:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+In file included from ./../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ./../../libcuda/gpgpu_context.h:3,
+                 from ptx.l:43:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+In file included from ./../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ./../../libcuda/gpgpu_context.h:3,
+                 from ptxinfo.l:42:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+./../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+instructions.cc: In member function ‘void ptx_thread_info::print_reg_thread(char*)’:
+instructions.cc:199:19: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 4 has type ‘const ptx_reg_t’ [-Wformat=]
+       fprintf(fp, "%s %llu %s %d\n", name.c_str(), it->second, dec.c_str(),
+                                                    ~~~~~~~~~~
+               size);
+                   ^
+instructions.cc: In function ‘void mma_impl(const ptx_instruction*, core_t*, warp_inst_t)’:
+instructions.cc:1937:43: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+           nw_v[k].f16 = *((half *)&hex_val);
+                                           ^
+instructions.cc:1937:43: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx_loader.cc:34:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+cuda-sim.cc: In member function ‘void cuda_sim::ptx_print_insn(address_type, FILE*)’:
+cuda-sim.cc:573:55: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fp, "<no instruction at address 0x%x>", pc);
+                                                       ^
+cuda-sim.cc: In member function ‘std::__cxx11::string cuda_sim::ptx_get_insn_str(address_type)’:
+cuda-sim.cc:587:68: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘address_type {aka long long unsigned int}’ [-Wformat=]
+     snprintf(buff, STR_SIZE, "<no instruction at address 0x%x>", pc);
+                                                                    ^
+cuda-sim.cc: In member function ‘void function_info::add_param_data(unsigned int, gpgpu_ptx_sim_arg*)’:
+cuda-sim.cc:1402:53: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+           p->name().c_str(), m_symtab->get_shared_next(),
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           m_symtab->get_shared_next() + num_bits / 8);
+                                                     ^
+cuda-sim.cc:1402:53: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+cuda-sim.cc: In member function ‘void function_info::list_param(FILE*) const’:
+cuda-sim.cc:1531:58: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+     fprintf(fout, "%s: %#08x\n", name.c_str(), param_addr);
+                                                          ^
+cuda-sim.cc: In member function ‘void function_info::ptx_jit_config(std::map<long long unsigned int, long unsigned int>, memory_space*, gpgpu_t*, dim3, dim3)’:
+cuda-sim.cc:1559:3: warning: NULL used in arithmetic [-Wpointer-arith]
+   assert(system(buff) != NULL);
+   ^~~~~~
+cuda-sim.cc: In member function ‘void ptx_thread_info::ptx_exec_inst(warp_inst_t&, unsigned int)’:
+cuda-sim.cc:1909:39: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 12 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+           m_last_set_operand_value.u64);
+                                       ^
+trace_driven.cc: In member function ‘bool trace_warp_inst_t::parse_from_trace_struct(const inst_trace_t&, const std::unordered_map<std::__cxx11::basic_string<char>, OpcodeChar>*, const trace_config*, const kernel_trace_t*)’:
+trace_driven.cc:177:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(it2 != OpcPowerMap->end())
+     ^~
+trace_driven.cc:179:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       oprnd_type = get_oprnd_type(op, sp_op);
+       ^~~~~~~~~~
+cuda-sim.cc: In member function ‘void cuda_sim::read_sim_environment_variables()’:
+cuda-sim.cc:2404:37: warning: format ‘%d’ expects argument of type ‘int*’, but argument 3 has type ‘addr_t* {aka long long unsigned int*}’ [-Wformat=]
+     sscanf(dbg_pc, "%d", &g_debug_pc);
+                          ~~~~~~~~~~~^
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from cuda_device_runtime.cc:12:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 32; FILE = _IO_FILE]’:
+memory.cc:444:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 32; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:444:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+ptx_loader.cc: In member function ‘void gpgpu_context::print_ptx_file(const char*, unsigned int, const char*)’:
+ptx_loader.cc:98:43: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 4 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+       snprintf(pc, 64, "%4u", pI->get_PC());
+                               ~~~~~~~~~~~~^
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 64; FILE = _IO_FILE]’:
+memory.cc:445:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 64; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:445:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 8192; FILE = _IO_FILE]’:
+memory.cc:446:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 8192; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:446:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 4096; FILE = _IO_FILE]’:
+memory.cc:447:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 4096; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:447:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 2097152; FILE = _IO_FILE]’:
+memory.cc:448:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 2097152; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:448:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::print(const char*, FILE*) const [with unsigned int BSIZE = 16384; FILE = _IO_FILE]’:
+memory.cc:449:16:   required from here
+memory.cc:179:12: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+     fprintf(fout, "%s %08x:", m_name.c_str(), i_page->first);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc: In instantiation of ‘void memory_space_impl<BSIZE>::read_single_block(mem_addr_t, mem_addr_t, size_t, void*) const [with unsigned int BSIZE = 16384; mem_addr_t = long long unsigned int; size_t = long unsigned int]’:
+memory.cc:449:16:   required from here
+memory.cc:117:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: ERROR * access to memory \'%s\' is unaligned : "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "addr=0x%x, length=%zu\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+         m_name.c_str(), addr, length);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+     printf(
+     ~~~~~~^
+         "GPGPU-Sim PTX: (addr+length)=0x%lx > 0x%x=(index+1)*BSIZE, "
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         "index=0x%x, BSIZE=0x%x\n",
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         (addr + length), (blk_idx + 1) * BSIZE, blk_idx, BSIZE);
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+memory.cc:121:11: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 4 has type ‘mem_addr_t {aka long long unsigned int}’ [-Wformat=]
+In file included from ../../libcuda/../src/cuda-sim/cuda-sim.h:37:0,
+                 from ../../libcuda/gpgpu_context.h:3,
+                 from ptx_parser.cc:30:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h: In constructor ‘scheduler_unit::scheduler_unit(shader_core_stats*, shader_core_ctx*, Scoreboard*, simt_stack**, std::vector<shd_warp_t*>*, register_set*, register_set*, register_set*, register_set*, register_set*, std::vector<register_set*>&, register_set*, int)’:
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:446:32: warning: ‘scheduler_unit::m_spec_cores_out’ will be initialized after [-Wreorder]
+   std::vector<register_set *> &m_spec_cores_out;
+                                ^~~~~~~~~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:445:17: warning:   ‘register_set* scheduler_unit::m_mem_out’ [-Wreorder]
+   register_set *m_mem_out;
+                 ^~~~~~~~~
+../../libcuda/../src/cuda-sim/../gpgpu-sim/shader.h:340:3: warning:   when initialized here [-Wreorder]
+   scheduler_unit(shader_core_stats *stats, shader_core_ctx *shader,
+   ^~~~~~~~~~~~~~
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/build/gcc-7.3.0/cuda-10010/release/cuda-sim/ptx_parser_decode.def: In member function ‘symbol_table* gpgpu_context::init_parser(const char*)’:
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/build/gcc-7.3.0/cuda-10010/release/cuda-sim/ptx_parser_decode.def:2:11: error: unable to find string literal operator ‘operator""end’ with ‘const char [30]’, ‘long unsigned int’ arguments
+ DEF(YYEOF,"YYEOF                     /* "end of file"  */")
+           ^
+ptx_parser.cc:115:43: note: in definition of macro ‘DEF’
+ #define DEF(X, Y) g_ptx_token_decode[X] = Y;
+                                           ^
+/home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/build/gcc-7.3.0/cuda-10010/release/cuda-sim/ptx_parser_decode.def:4:13: error: unable to find string literal operator ‘operator""invalid’ with ‘const char [28]’, ‘long unsigned int’ arguments
+ DEF(YYUNDEF,"YYUNDEF                 /* "invalid token"  */")
+             ^
+ptx_parser.cc:115:43: note: in definition of macro ‘DEF’
+ #define DEF(X, Y) g_ptx_token_decode[X] = Y;
+                                           ^
+ptx_parser.cc: In member function ‘void ptx_recognizer::end_function()’:
+ptx_parser.cc:55:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+     printf(__VA_ARGS__);                                                  \
+                       ^
+ptx_parser.cc:210:21:
+                     g_func_info->get_start_PC());
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ptx_parser.cc:209:3: note: in expansion of macro ‘PTX_PARSE_DPRINTF’
+   PTX_PARSE_DPRINTF("function %s, PC = %d\n", g_func_info->get_name().c_str(),
+   ^~~~~~~~~~~~~~~~~
+ptx_parser.cc: In member function ‘void ptx_recognizer::add_identifier(const char*, int, unsigned int)’:
+ptx_parser.cc:491:66: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+           identifier, g_current_symbol_table->get_local_next(),
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+           g_current_symbol_table->get_local_next() + num_bits / 8);
+                                                                  ^
+ptx_parser.cc:491:66: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘long long unsigned int’ [-Wformat=]
+ptx_parser.cc: In member function ‘void ptx_recognizer::add_constptr(const char*, const char*, int)’:
+ptx_parser.cc:525:76: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘addr_t {aka long long unsigned int}’ [-Wformat=]
+          identifier1, s1->get_address(), addr + offset, identifier2, offset);
+                       ~~~~~~~~~~~~~~~~~                                    ^
+ptx_loader.cc: In function ‘char* get_app_binary_name()’:
+ptx_loader.cc:341:17: warning: ‘self_exe_path’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   self_exe_path = strtok(self_exe_path, ".");
+   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [Makefile:116: /home/jack/accelsim_HMS/gpu-simulator/gpgpu-sim/build/gcc-7.3.0/cuda-10010/release/cuda-sim/ptx_parser.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+ptx_loader.cc: In function ‘void fix_duplicate_errors(char*)’:
+ptx_loader.cc:267:24: warning: ‘funcptr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       while (*(funcptr - offset) != '\n') offset++;
+               ~~~~~~~~~^~~~~~~~~
+cuda_device_runtime.cc: In member function ‘void cuda_device_runtime::gpgpusim_cuda_getParameterBufferV2(const ptx_instruction*, ptx_thread_info*, const function_info*)’:
+cuda_device_runtime.cc:93:48: warning: ‘child_kernel_entry’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   g_cuda_device_launch_param_map[param_buffer] = device_launch_config;
+cuda_device_runtime.cc: In member function ‘void cuda_device_runtime::gpgpusim_cuda_streamCreateWithFlags(const ptx_instruction*, ptx_thread_info*, const function_info*)’:
+cuda_device_runtime.cc:294:29: warning: ‘pStream_addr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   thread->m_local_mem->write(pStream_addr, sizeof(cudaStream_t), &stream, NULL,
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              NULL);
+                              ~~~~~
+make[1]: *** [Makefile:211: cuda-sim] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:54: gpgpu-sim] Error 2

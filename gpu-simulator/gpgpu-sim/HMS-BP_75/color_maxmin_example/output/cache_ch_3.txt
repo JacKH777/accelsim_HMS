@@ -1,0 +1,2 @@
+num_cache_hit 2301 num_cache_miss 3962 cache_miss_rate 0.632604 num_cache_hit_rd 0 num_cache_miss_rd 0 cache_miss_rate_rd 0 num_cache_hit_wr 2301 num_cache_miss_wr 3962 cache_miss_rate_wr 0.632604
+kernel 1 end

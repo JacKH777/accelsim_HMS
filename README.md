@@ -1,5 +1,7 @@
 # Simulator for GPU with Heterogeneous Memory Stack (HMS) 
 
+Refrence : accelsim_HMS(https://github.com/PSAL-POSTECH/accelsim_HMS)
+
 This repository contains the source code of modified Accel-sim used in the following paper, which proposes the Heterogeneous Memory Stack (HMS).
 
 Jeongmin Hong, Sungjun Cho, Geonwoo Park, Wonhyuk Yang, Young-Ho Gong and Gwangsun Kim, "Bandwidth-Effective DRAM Cache for GPU s with Storage-Class Memory,", HPCA'24.  

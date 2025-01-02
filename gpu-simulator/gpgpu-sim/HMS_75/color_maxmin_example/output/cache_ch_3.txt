@@ -1,0 +1,2 @@
+num_cache_hit 0 num_cache_miss 6248 cache_miss_rate 1 num_cache_hit_rd 0 num_cache_miss_rd 0 cache_miss_rate_rd 0 num_cache_hit_wr 0 num_cache_miss_wr 6248 cache_miss_rate_wr 1
+kernel 1 end
